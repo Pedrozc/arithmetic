@@ -16,5 +16,7 @@ public class ArrayTest {
         System.out.println("==========================");
         array.add(4,10);
         System.out.println(array.toString());
+        System.out.println("-----------------------------");
+        System.out.println("the array's capacity====== "  + array.getCapacity());
     }
 }
