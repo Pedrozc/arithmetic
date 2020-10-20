@@ -1,5 +1,5 @@
 package Queque;
-
+//普通队列: 先进先出;后进后出
 public interface Queque<E> {
     //队列长度
     int getSize();
