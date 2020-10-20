@@ -25,6 +25,10 @@ public class Array<E> {
         size = 0;
     }
 
+    public Array(E[] arr){
+        data = arr;
+    }
+
     // 无参数的构造函数，默认数组的容量capacity=10
     public Array(){
         this(10);
@@ -117,6 +121,19 @@ public class Array<E> {
     public E getFirst(){
         return get(0);
     }
+
+
+    //互相交换
+    public void swap(int i, int j){
+
+        if(i < 0 || i >= size || j < 0 || j >= size) {
+            throw new IllegalArgumentException("Index is illegal.");
+        }
+        E t = data[i];
+        data[i] = data[j];
+        data[j] = t;
+    }
+
     /**查询元素**/
 
     // 查找数组中是否有元素e
