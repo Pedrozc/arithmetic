@@ -1,7 +1,7 @@
 package SegmentTree;
 
 import org.omg.CORBA.Object;
-
+//线段树
 public class SegmentTree<E> {
 
     private E[] tree;
